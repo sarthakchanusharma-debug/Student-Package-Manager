@@ -1,0 +1,27 @@
+package studentmanager.app;
+
+import studentmanager.model.Student;
+import studentmanager.service.StudentManager;
+
+// Main class starts the application.
+public class Main {
+    public static void main(String[] args) {
+        // Create a StudentManager object.
+        StudentManager manager = new StudentManager();
+
+        // Create several Student objects.
+        Student student1 = new Student(101, "Alice Sharma", "BCA", 89.5);
+        Student student2 = new Student(102, "Rohit Verma", "BCA", 76.0);
+        Student student3 = new Student(103, "Meera Singh", "BCA", 92.4);
+
+        // Add students to the manager.
+        manager.addStudent(student1);
+        manager.addStudent(student2);
+        manager.addStudent(student3);
+
+        // Display student information.
+        System.out.println("Student Package Manager");
+        System.out.println("----------------------");
+        manager.displayAllStudents();
+    }
+}

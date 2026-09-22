@@ -1,0 +1,42 @@
+package studentmanager.model;
+
+// Student class stores all student-related details.
+public class Student {
+    private int studentId;
+    private String name;
+    private String course;
+    private double marks;
+
+    // Constructor to initialize student information.
+    public Student(int studentId, String name, String course, double marks) {
+        this.studentId = studentId;
+        this.name = name;
+        this.course = course;
+        this.marks = marks;
+    }
+
+    // Getter methods to access private data.
+    public int getStudentId() {
+        return studentId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getCourse() {
+        return course;
+    }
+
+    public double getMarks() {
+        return marks;
+    }
+
+    // Method to display all student details.
+    public void displayStudent() {
+        System.out.println("Student ID: " + studentId);
+        System.out.println("Name: " + name);
+        System.out.println("Course: " + course);
+        System.out.println("Marks: " + marks);
+    }
+}

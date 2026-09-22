@@ -1,0 +1,92 @@
+# Student Package Manager
+
+## Project Objective
+This project is a beginner-friendly Java mini project that demonstrates the use of Java packages and import statements in a student management application. It is designed to help BCA students understand how to organize classes into different packages and reuse them across the project.
+
+## Features
+- Store student information: ID, name, course, and marks
+- Create a `Student` class in the `model` package
+- Create a `StudentManager` class in the `service` package
+- Maintain a list of students using `ArrayList`
+- Add students to the list
+- Display all students
+- Demonstrate Java packages clearly
+- Demonstrate importing classes from one package into another
+- Simple, clean, and suitable for a college-level tiny project
+- No database and no external libraries used
+
+## Package Structure
+```text
+studentmanager/
+├── model/
+│   └── Student.java
+├── service/
+│   └── StudentManager.java
+└── app/
+    └── Main.java
+```
+
+## Technologies Used
+- Java
+- Java Packages
+- ArrayList collection
+- Command-line compilation and execution
+
+## How to Compile
+Open the terminal in the project root and run:
+
+```bash
+javac studentmanager/model/Student.java studentmanager/service/StudentManager.java studentmanager/app/Main.java
+```
+
+## How to Run
+After compiling, run:
+
+```bash
+java -cp . studentmanager.app.Main
+```
+
+## Sample Output
+```text
+Student Package Manager
+----------------------
+Student ID: 101
+Name: Alice Sharma
+Course: BCA
+Marks: 89.5
+
+Student ID: 102
+Name: Rohit Verma
+Course: BCA
+Marks: 76.0
+
+Student ID: 103
+Name: Meera Singh
+Course: BCA
+Marks: 92.4
+```
+
+## Explanation of Packages and Import Statements
+This project clearly demonstrates Java package organization.
+
+- `studentmanager.model` contains the `Student` class.
+- `studentmanager.service` contains the `StudentManager` class.
+- `studentmanager.app` contains the `Main` class.
+
+The `StudentManager` class imports the `Student` class from another package:
+
+```java
+import studentmanager.model.Student;
+```
+
+The `Main` class imports both classes:
+
+```java
+import studentmanager.model.Student;
+import studentmanager.service.StudentManager;
+```
+
+These import statements allow classes in one package to be used in another package without writing everything in the same file. This shows how Java packages help keep code organized, readable, and reusable.
+
+## Project Summary
+This is a simple Java tiny project that demonstrates package structure and import usage in a practical application. It is clean, beginner-friendly, and ready to upload to GitHub.
